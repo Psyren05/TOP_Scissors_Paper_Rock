@@ -1,43 +1,59 @@
-function getComputerChoice() {
-  const choices = ['Rock', 'Paper', 'Scissors']
-  const randomChoice = Math.floor(Math.random() * choices.length)
-  return choices[randomChoice];
+function getComputerChoice () {
+  let choices = ['Scissors', 'Paper', 'Rock']
+  let randomChoice = Math.floor(Math.random() * choices.length)
+  return choices[randomChoice]
 }
-
-function playerChoice() {
-let input = prompt('Type Scissors, Paper or Rock'); 
-while (input == null) {
-  input = prompt('Type Scissors, Paper or Rock');
-}
-input = input.toLowerCase()
-return input
-}
-
-let playerScore = 0;
-let compScore = 0;
 
 function playRound(playerSelection, computerSelection) {
-
-if (playerSelection === 'Rock' && computerSelection === 'Paper') {
-  compScore++
-  return 'You Lose! Paper beats Rock' 
-} else if (playerSelection === 'Rock' && computerSelection === 'Scissors') {
-  playerScore++
-  return 'You Win! Rock beats Scissors'  
-} else if (playerSelection === 'Rock' && computerSelection === 'Rock') {
-  return 'Draw!'
-} else if (playerSelection === 'Scissors' && computerSelection === 'Paper') {
-playerScore++
-return 'You Win! Scissors beats Paper' 
-} else if (playerSelection === 'Scissors' && computerSelection === 'Rock') {
-compScore++
-return 'You Lose! Rock beats Scissors' 
-}
+  if (playerSelection === 'rock' && computerSelection === 'Paper') {
+      return "You Lose! Paper beats Rock"
+  } else if (playerSelection === 'scissors' && computerSelection === 'Paper') {
+      return "You Win! Scissors beats Paper"
+  } else if (playerSelection === 'rock' && computerSelection === 'Scissors') {
+      return "You Lose! Scissors beats Rock"
+  } else if (playerSelection === 'paper' && computerSelection === 'Rock') {
+      return "You Win! Paper beats Rock"
+  } else if (playerSelection === computerSelection.toLowerCase()) {
+      return "Draw!"
+  } else {
+      return "You Lose!"
+  }
 }
 
 function game() {
-playRound();
+  let playerScore = 0;
+  let compScore = 0;
+  
+for (let round = 1; round >= 5; round++) {
+  const playerSelection = prompt(`Round  ${round}.'Please enter your selection: Scissors, Paper or Rock'`);
+}
 }
 
-game()
+console.log(prompt)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
