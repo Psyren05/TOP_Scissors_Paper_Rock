@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+#main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+#button-container {
+    height: 10vh;
+}
+
+button {
+    padding: 5px;
+    margin: 10px;
+}
+
+#playerCompLabels {
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+}
+
+#results-text-container {
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    margin-bottom: 25px;
+}
+
+#results-text {
+    font-size: 40px;
+}
+
+#label {
+    padding: 14px;
+}
+
+span {
+    padding: 20px;
+}
+
+#display-score {
+    height: 10vh;
+}
+
+#compScore, #playerScore {
+    font-size: 30px;
+}
