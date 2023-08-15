@@ -2,12 +2,12 @@
 
 # Description 
 
-+ created a scissors paper rock programme that plays 5 rounds and keeps the scores of both players. also gives a final score once the 5 rounds are up
-+ user input is gathered using the prompt() method
-+ if the user inputs ROCK or paPER or scissors the programme will correct the input to Rock, Paper and Scissors
++ created an interactive scissors paper rock programme that plays 5 rounds and keeps the scores of both players. 
++ added a restart button to reset the game
 
 # Reflection
 
-+ I got to practise writing functions, logic and a for loop
++ I got to practise writing functions, event listeners, game logic and using .textContent
 + I got to practise my problem soliving skills and critial thinking
 + I feel proud of this project!
+![Screenshot_2023-08-15_16-23-36](https://github.com/Psyren05/TOP_Scissors_Paper_Rock/assets/124075057/aed98624-4e7b-4295-834f-06feb2c8ddba)
